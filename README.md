@@ -5,3 +5,7 @@
 ## rem 适配
 
 > 采用 **postcss-pxtorem 和 amfe-flexible** 进行 rem 适配
+
+## 已知问题
+
+1. 生产构建时会有部分静态资源无法打包
