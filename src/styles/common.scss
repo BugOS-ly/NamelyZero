@@ -1,0 +1,53 @@
+// ******************** 布局变量 ******************** //
+
+// #app的padding
+$app_padding_top_bottom: 2.4%;
+$app_padding_left_right: 1.6%;
+
+// 四者的宽高之间相互约束
+// HeaderBar的高
+$header_bar_height: 5.5%;
+// horizontal-blank-bar的高
+$horizontal_blank_bar_height: 2.7%;
+// NavBar的宽高
+$nav_bar_width: 3%;
+$nav_bar_height: 100% - $header_bar_height - $horizontal_blank_bar_height;
+//$vertical_blank_bar的宽
+$vertical_blank_bar_width: 1.7%;
+$vertical_blank_bar_height: $nav_bar_height;
+// Main的宽高
+$main_width: 100% - $nav_bar_width - $vertical_blank_bar_width;
+$main_height: $nav_bar_height;
+
+// ******************** APP 样式变量 ******************** //
+$bg_color: #29263d;
+$app_border_radius: 20px;
+
+// ******************** 头部菜单栏 样式变量 ******************** //
+$header_bar_radius: 5px;
+
+// ******************** 左侧菜单栏 样式变量 ******************** //
+$nav_bar_radius: 7px;
+
+// ******************** 趋势栏 样式变量 ******************** //
+$trend_bar_height: 52%;
+$trend_bar_radius: 10px;
+
+// ******************** 交易栏 样式变量 ******************** //
+$trade_bar_height: 100% - $trend_bar_height;
+$trade_bar_radius: 10px;
+
+// *************************全局通用样式************************* //
+
+//双伪元素实现清除浮动
+.clearFloat {
+  &::after,
+  &::before {
+    content: '';
+    display: table;
+  }
+
+  &::after {
+    clear: both;
+  }
+}

@@ -1,0 +1,26 @@
+@import '/src/styles/common.scss';
+
+// 解决electron无边框导致无法拖动窗口
+#app {
+  -webkit-app-region: drag;
+}
+// 解决点击事件失效
+div {
+  -webkit-app-region: no-drag;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#app {
+  width: 100%;
+  height: 100%;
+  border: 1px solid transparent;
+  border-radius: $app_border_radius;
+  padding: $app_padding_top_bottom $app_padding_left_right;
+  background-color: $bg_color;
+  color: #ffffff;
+}

@@ -1,0 +1,19 @@
+// ******************** 主体栏 ******************** //
+$subject_bar_width: 38%;
+
+// ******************** 主体 ******************** //
+$subject_height: 12%;
+$subject_radius: 6px;
+
+// ******************** 详情栏 ******************** //
+$details_height: 65%;
+
+// 详情头部
+$details_header_height: 15%;
+
+// 详情items和item
+$details_items_height: 97% - $details_header_height;
+$details_item_radius: 8px;
+
+// ******************** 分数栏 ******************** //
+$score_height: 88% - $details_height;
