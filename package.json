@@ -53,12 +53,12 @@
     }
   },
   "dependencies": {
-    "cross-env": "^7.0.3",
     "vue": "^3.2.37"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^3.1.0",
     "amfe-flexible": "^2.2.1",
+    "cross-env": "^7.0.3",
     "electron": "^21.1.0",
     "electron-builder": "^23.3.3",
     "postcss-pxtorem": "^6.0.0",
