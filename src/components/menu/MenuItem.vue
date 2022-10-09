@@ -4,10 +4,14 @@ export default {
 }
 </script>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+const props = defineProps<{
+  title: string
+}>()
+</script>
 
 <template>
-  <div id="menu-item" class="clickable">
+  <div id="menu-item" class="clickable" :data-title="props.title">
     <slot />
   </div>
 </template>
@@ -19,6 +23,19 @@ export default {
 }
 
 #menu-item {
-  margin: 0 auto;
+  position: relative;
+
+  &[data-title]:hover:after {
+    content: attr(data-title);
+    position: absolute;
+    font-size: 7px;
+    color: #9994ba;
+    background-color: #2e2b43;
+    border-radius: 3px;
+    width: max-content;
+    padding: 3px;
+    // top: 5px;
+    // right: -15px;
+  }
 }
 </style>

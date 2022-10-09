@@ -69,7 +69,7 @@ function test(option: string): void {
   #search-switch {
     display: flex;
     justify-content: space-around;
-    width: 48%;
+    width: 47.9%;
     transform: translateX(-5%);
   }
 }

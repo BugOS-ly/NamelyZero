@@ -6,14 +6,18 @@ export default {
 
 <script setup lang="ts">
 import { ref } from 'vue'
+import Menu from '@/components/menu/Menu.vue'
+import MenuItem from '@/components/menu/MenuItem.vue'
 
 const avatar = ref<string>('src/assets/images/avatar.jpg')
 </script>
 
 <template>
-  <div id="personal-bar" class="clickable">
-    <img id="avatar" :src="avatar" alt="" />
-  </div>
+  <Menu id="personal-bar">
+    <MenuItem id="personal" title="个人中心">
+      <img id="avatar" :src="avatar" alt="" />
+    </MenuItem>
+  </Menu>
 </template>
 
 <style scoped lang="scss">
@@ -24,9 +28,11 @@ const avatar = ref<string>('src/assets/images/avatar.jpg')
 #personal-bar {
   width: 3.8%;
 
-  #avatar {
-    width: 100%;
+  #personal {
     height: 100%;
+  }
+
+  #avatar {
     border-radius: $header_bar_radius;
   }
 }

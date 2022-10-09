@@ -7,19 +7,19 @@ export default {
 <script setup lang="ts">
 import SymbolIcon from '@/components/SymbolIcon/SymbolIcon.vue'
 import Menu from '@/components/menu/Menu.vue'
-import MenuItem from '../menu/MenuItem.vue'
+import MenuItem from '@/components/menu/MenuItem.vue'
 </script>
 
 <template>
   <div id="trend-bar">
     <Menu class="trend-menu">
-      <MenuItem>
+      <MenuItem title="瞄准">
         <SymbolIcon name="icon-test" size="10px" />
       </MenuItem>
-      <MenuItem>
+      <MenuItem title="美元">
         <SymbolIcon name="meiyuan" size="12px" />
       </MenuItem>
-      <MenuItem>
+      <MenuItem title="复制">
         <SymbolIcon name="fuzhi" size="10px" />
       </MenuItem>
     </Menu>

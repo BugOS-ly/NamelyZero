@@ -7,13 +7,9 @@ export default {
 <script setup lang="ts"></script>
 
 <template>
-  <div id="menu">
+  <div>
     <slot />
   </div>
 </template>
 
-<style scoped lang="scss">
-#menu {
-  width: fit-content;
-}
-</style>
+<style scoped lang="scss"></style>

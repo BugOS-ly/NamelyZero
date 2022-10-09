@@ -10,7 +10,7 @@ export default {
 
 <template>
   <div id="logo-bar">
-    <img id="logo" src="@/assets/images/logo.svg" alt="" />
+    <img src="@/assets/images/logo.svg" alt="" />
   </div>
 </template>
 
@@ -18,10 +18,5 @@ export default {
 #logo-bar {
   transform: translateX(-10%);
   cursor: pointer;
-
-  #logo {
-    width: 100%;
-    height: 100%;
-  }
 }
 </style>

@@ -72,7 +72,6 @@ const subjectImg = ref<string>('src/assets/images/avatar.jpg')
     #subject-img {
       display: inline-block;
       width: 10%;
-      height: 100%;
       border-radius: $subject_radius;
     }
 
