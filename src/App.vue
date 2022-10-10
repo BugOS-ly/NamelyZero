@@ -1,7 +1,8 @@
 <script setup lang="ts">
 import HeaderBar from '@/layout/HeaderBar.vue'
 import NavBar from '@/layout/NavBar.vue'
-import Main from '@/layout/Main.vue'
+
+import { useRoute } from 'vue-router'
 </script>
 
 <template>
@@ -9,7 +10,14 @@ import Main from '@/layout/Main.vue'
   <div id="horizontal-blank-bar"></div>
   <NavBar />
   <div id="vertical-blank-bar"></div>
-  <Main />
+  <div id="main">
+    <router-view v-slot="{ Component }">
+      <keep-alive>
+        <component :is="Component" v-if="useRoute().meta.keepAlive" />
+      </keep-alive>
+      <component :is="Component" v-if="!useRoute().meta.keepAlive" />
+    </router-view>
+  </div>
 </template>
 
 <style scoped lang="scss">
@@ -23,5 +31,11 @@ import Main from '@/layout/Main.vue'
   float: left;
   width: $vertical_blank_bar_width;
   height: $vertical_blank_bar_height;
+}
+
+#main {
+  float: right;
+  width: $home_width;
+  height: $home_height;
 }
 </style>

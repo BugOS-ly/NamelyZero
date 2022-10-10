@@ -12,7 +12,7 @@ import SymbolIcon from '@/components/SymbolIcon/SymbolIcon.vue'
 
 <template>
   <Menu id="nav-bar">
-    <MenuItem title="主页">
+    <MenuItem title="主页" to="Home">
       <SymbolIcon name="zhuye1" size="14px" color="#c6c1ee" />
     </MenuItem>
 
@@ -57,7 +57,7 @@ import SymbolIcon from '@/components/SymbolIcon/SymbolIcon.vue'
       </MenuItem>
     </div>
 
-    <MenuItem title="世界">
+    <MenuItem title="世界" to="World">
       <SymbolIcon name="faxian" size="16px" />
     </MenuItem>
   </Menu>

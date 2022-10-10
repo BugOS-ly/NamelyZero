@@ -5,13 +5,22 @@ export default {
 </script>
 
 <script setup lang="ts">
+import RouterUtil from '@/utils/RouterUtils'
+
 const props = defineProps<{
   title: string
+  // 跳转路由的名称 name
+  to?: string | undefined
 }>()
 </script>
 
 <template>
-  <div id="menu-item" class="clickable" :data-title="props.title">
+  <div
+    id="menu-item"
+    class="clickable"
+    :data-title="props.title"
+    @click.prevent="RouterUtil.push(to)"
+  >
     <slot />
   </div>
 </template>
@@ -34,8 +43,6 @@ const props = defineProps<{
     border-radius: 3px;
     width: max-content;
     padding: 3px;
-    // top: 5px;
-    // right: -15px;
   }
 }
 </style>

@@ -27,7 +27,7 @@ defineProps<{
       <SymbolIcon v-else name="decline-copy" size="5px" />
     </span>
     <span id="serialNumber" class="center-vertically">
-      <SymbolIcon name="fuzhi" size="8px" />
+      <SymbolIcon name="fuzhi" size="8px" class="clickable" />
       {{ props.serialNumber }}
     </span>
     <span><SymbolIcon name="share" size="9px" color="#6b6787" /></span>
@@ -36,6 +36,10 @@ defineProps<{
 
 <style scoped lang="scss">
 @import '../style.scss';
+
+.clickable {
+  cursor: pointer;
+}
 
 .center-vertically {
   display: flex;

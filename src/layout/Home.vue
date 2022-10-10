@@ -1,6 +1,6 @@
 <script lang="ts">
 export default {
-  name: 'Main'
+  name: 'Home'
 }
 </script>
 
@@ -11,7 +11,7 @@ import SubjectBar from '@/components/subject/SubjectBar.vue'
 </script>
 
 <template>
-  <div id="main">
+  <div id="home">
     <SubjectBar />
     <div id="general-map">
       <TrendBar />
@@ -21,15 +21,13 @@ import SubjectBar from '@/components/subject/SubjectBar.vue'
 </template>
 
 <style scoped lang="scss">
-#main {
-  float: right;
+#home {
   display: flex;
   justify-content: space-between;
-  width: $main_width;
-  height: $main_height;
+  height: 100%;
+}
 
-  #general-map {
-    width: 60.5%;
-  }
+#general-map {
+  width: 60.5%;
 }
 </style>

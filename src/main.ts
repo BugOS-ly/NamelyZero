@@ -1,5 +1,6 @@
 import { createApp } from 'vue'
 import App from './App.vue'
+import router from './router'
 
 // 自适应尺寸
 import 'amfe-flexible/index.js'
@@ -7,4 +8,4 @@ import 'amfe-flexible/index.js'
 import './styles/reset.scss'
 import './styles/global.scss'
 
-createApp(App).mount('#app')
+createApp(App).use(router).mount('#app')

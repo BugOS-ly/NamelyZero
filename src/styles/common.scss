@@ -15,9 +15,9 @@ $nav_bar_height: 100% - $header_bar_height - $horizontal_blank_bar_height;
 //$vertical_blank_bar的宽
 $vertical_blank_bar_width: 1.7%;
 $vertical_blank_bar_height: $nav_bar_height;
-// Main的宽高
-$main_width: 100% - $nav_bar_width - $vertical_blank_bar_width;
-$main_height: $nav_bar_height;
+// Home的宽高
+$home_width: 100% - $nav_bar_width - $vertical_blank_bar_width;
+$home_height: $nav_bar_height;
 
 // ******************** APP 样式变量 ******************** //
 $bg_color: #29263d;
